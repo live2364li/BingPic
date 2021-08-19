@@ -1,6 +1,7 @@
 import json
 from requests import get
 
+
 def GetPic():
     api_url = r'https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1'
     api = get(api_url)
@@ -16,5 +17,6 @@ def GetPic():
     else:
         print('Create Image Faild!')
 
+        
 if __name__ == "__main__":
     GetPic()
